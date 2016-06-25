@@ -1,0 +1,28 @@
+#import <Foundation/Foundation.h>
+
+int main ()
+{
+  
+int numberOne= 0;
+int numberTwo = 1;
+int sum = 0;
+int temp;
+int i = 0;   
+
+for(i = 0;numberTwo<4000000; i++){
+    
+    if((numberTwo % 2 == 0)){
+    sum = sum + numberTwo;
+    NSLog(@"sum = %d",i,sum); 
+        
+    }
+    temp = numberOne + numberTwo;
+    numberOne = numberTwo;
+    numberTwo = temp;
+    
+};
+    
+int answer = sum;
+NSLog(@"Here is the answer %d",answer);
+   
+}
