@@ -1,0 +1,31 @@
+#import <Foundation/Foundation.h>
+
+int main ()
+{
+
+    long long number = 600851475143;
+    int primeNumMult = 0;
+    int primeNum = 0;
+    int i;
+
+
+ for(i = 2; i <number; i++){
+       
+            
+        if(i % 2 != 0){
+            
+            primeNum = i;
+            
+            if (number % primeNum == 0){
+                primeNumMult = primeNum;
+                //NSLog(@"%d",primeNumMult);
+                
+                }
+          
+        }
+        
+    }  
+    
+    NSLog(@"%d",primeNumMult); //The very last iteration results will be stored in primeNumMult, so no need to create a max function
+    return primeNumMult;
+}
